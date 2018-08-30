@@ -18,15 +18,15 @@ public class CustomerServiceImpl implements CustomerService	 {
 	
 	private static List<Customer> customers = new ArrayList<>();
 	
-	static {
-		Customer jack1 = new Customer(1,223, "Retiro", "se realizo un retiro", "this is a example", "www.google.com",false);
-		Customer jack2 = new Customer(2,432, "Deposito a cheques", "se realizo un deposito a cheques", "this is a example ", "www.google.com",false);
-		Customer jack3 = new Customer(3,435, "Deposito a cuenta", "se realizo un deposito a cuenta", "this is a example ", "www.google.com",false);
-		
-		customers.add(jack1);
-		customers.add(jack2);
-		customers.add(jack3);
-	}
+//	static {
+//		Customer jack1 = new Customer(1,223, "Retiro", "se realizo un retiro", "this is a example", "www.google.com",false);
+//		Customer jack2 = new Customer(2,432, "Deposito a cheques", "se realizo un deposito a cheques", "this is a example ", "www.google.com",false);
+//		Customer jack3 = new Customer(3,435, "Deposito a cuenta", "se realizo un deposito a cuenta", "this is a example ", "www.google.com",false);
+//		
+//		customers.add(jack1);
+//		customers.add(jack2);
+//		customers.add(jack3);
+//	}
 	
 	@Override
 	public List<Customer> getAllCustomer() {

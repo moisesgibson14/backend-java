@@ -30,6 +30,27 @@ public class Customer {
 	@Column(name="status")
 	private Boolean status;
 	
+	@Column(name="action_notification")
+	private String action_notification;
+	
+	@Column(name="id_campaing")
+	private Integer id_campaing;
+	
+	@Column(name="type_notification")
+	private String type_notification;
+	
+	@Column(name="id_device")
+	private Integer id_device;
+	
+	@Column(name="id_os")
+	private Integer id_os;
+	
+	@Column(name="version_os")
+	private String version_os;
+	
+	@Column(name="validity_notification")
+	private String validity_notification;
+	
 	public Customer() {
 		super();
 	}
@@ -41,7 +62,16 @@ public class Customer {
 			String subTitle,
 			String description,
 			String multimedia,
-			Boolean status) {
+			Boolean status,
+			String action_notification,
+			Integer id_campaing,
+			String type_notification,
+			Integer id_device,
+			Integer id_os,
+			String version_os,
+			String validity_notification
+			) {
+		
 		super();
 		this.id = id;
 		this.id_App = id_App;
@@ -50,6 +80,13 @@ public class Customer {
 		this.description = description;
 		this.multimedia = multimedia;
 		this.status = status;
+		this.action_notification = action_notification;
+		this.id_campaing = id_campaing;
+		this.type_notification = type_notification;
+		this.id_device = id_device;
+		this.id_os = id_os;
+		this.version_os = version_os;
+		this.validity_notification = validity_notification;
 	}
 
 	public Integer getId() {
@@ -100,15 +137,69 @@ public class Customer {
 		this.multimedia = multimedia;
 	}
 
-	public boolean isStatus() {
+	public Boolean getStatus() {
 		return status;
 	}
 
-	public void setStatus(boolean status) {
+	public void setStatus(Boolean status) {
 		this.status = status;
 	}
-	
-	
+
+	public String getAction_notification() {
+		return action_notification;
+	}
+
+	public void setAction_notification(String action_notification) {
+		this.action_notification = action_notification;
+	}
+
+	public Integer getId_campaing() {
+		return id_campaing;
+	}
+
+	public void setId_campaing(Integer id_campaing) {
+		this.id_campaing = id_campaing;
+	}
+
+	public String getType_notification() {
+		return type_notification;
+	}
+
+	public void setType_notification(String type_notification) {
+		this.type_notification = type_notification;
+	}
+
+	public Integer getId_device() {
+		return id_device;
+	}
+
+	public void setId_device(Integer id_device) {
+		this.id_device = id_device;
+	}
+
+	public Integer getId_os() {
+		return id_os;
+	}
+
+	public void setId_os(Integer id_os) {
+		this.id_os = id_os;
+	}
+
+	public String getVersion_os() {
+		return version_os;
+	}
+
+	public void setVersion_os(String version_os) {
+		this.version_os = version_os;
+	}
+
+	public String getValidity_notification() {
+		return validity_notification;
+	}
+
+	public void setValidity_notification(String validity_notification) {
+		this.validity_notification = validity_notification;
+	}
 
 	
 		
