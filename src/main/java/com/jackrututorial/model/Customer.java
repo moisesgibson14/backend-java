@@ -1,4 +1,5 @@
 package com.jackrututorial.model;
+import java.time.LocalDateTime;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -26,6 +27,9 @@ public class Customer {
 	
 	@Column(name="multimedia")
 	private String multimedia;
+	
+	@Column(name="send_date")
+	private LocalDateTime send_date;
 	
 	@Column(name="status")
 	private Boolean status;
@@ -157,6 +161,16 @@ public class Customer {
 		return id_campaing;
 	}
 
+
+
+	public LocalDateTime getSend_date() {
+		return send_date;
+	}
+
+	public void setSend_date(LocalDateTime send_date) {
+		this.send_date = send_date;
+	}
+
 	public void setId_campaing(Integer id_campaing) {
 		this.id_campaing = id_campaing;
 	}
@@ -200,6 +214,17 @@ public class Customer {
 	public void setValidity_notification(String validity_notification) {
 		this.validity_notification = validity_notification;
 	}
+
+	@Override
+	public String toString() {
+		return "Customer [id=" + id + ", id_App=" + id_App + ", title=" + title + ", subTitle=" + subTitle
+				+ ", description=" + description + ", multimedia=" + multimedia + ", status=" + status
+				+ ", action_notification=" + action_notification + ", id_campaing=" + id_campaing
+				+ ", type_notification=" + type_notification + ", id_device=" + id_device + ", id_os=" + id_os
+				+ ", version_os=" + version_os + ", validity_notification=" + validity_notification + "]";
+	}
+	
+	
 
 	
 		
