@@ -51,25 +51,7 @@ public class UserController {
 	 
 	 @PutMapping("/customer/")
 	 public ResponseEntity<?> updateCustomer(@RequestBody Customer customer){
-//	  Customer c = customerService.getCustomerById(customer.getId());
-//	  
-//	  if(c == null) {
-//	   return new ResponseEntity<Customer>(HttpStatus.NOT_FOUND);
-//	  }
-//	  
-//	  c.setTitle(customer.getTitle());
-//	  c.setSubTitle(customer.getSubTitle());
-//	  c.setDescription(customer.getDescription());
-//	  c.setStatus(customer.getStatus());
-//	  c.setAction_notification(customer.getAction_notification());
-//	  c.setId_campaing(customer.getId_campaing());
-//	  c.setType_notification(customer.getType_notification());
-//	  c.setId_device(customer.getId_device());
-//	  c.setId_os(customer.getId_os());
-//	  c.setVersion_os(customer.getVersion_os());
-//	  c.setValidity_notification(customer.getValidity_notification());
 		 customerService.updateCustomer(customer);
-	 
 	  return new ResponseEntity<String>("Actualizado", HttpStatus.OK);
 	 }
 	 
